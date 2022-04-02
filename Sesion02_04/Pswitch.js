@@ -1,5 +1,5 @@
 //switch evalúa la opcion
-let opcion=14;
+let opcion=9;
 switch(opcion){
     case 8:
         console.log("Hora de desayunar son: "+opcion);
@@ -14,6 +14,6 @@ switch(opcion){
         console.log("Hora de Cener son: "+opcion);
         break;
     default:
-        console.log("En esta hora no se come"+opcion);
+        console.log("En esta hora no se come "+opcion);
         break;
 }

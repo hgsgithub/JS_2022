@@ -1,5 +1,6 @@
 // Edad laboral
-let edad=15;
+edad=prompt("Edad : ");
+//let edad=15;
  if(edad<18){
     console.log("No puede trabajar, es menor de edad");
 }else if(edad<65){
