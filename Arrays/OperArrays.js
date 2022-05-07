@@ -9,7 +9,7 @@ let a3=[p1,p2,p3,p4];
 console.log(a3.indexOf(p3));
 // Funcion normal
 let nombres=a3.map(function(elem){
-return elem.name;
+return elem.id;
 });
 console.log(a3);
 console.log(nombres);
@@ -22,7 +22,7 @@ console.log(nombres);*/
 document.getElementById("boton").onclick=function(){
     Aobjetos();
 }
-// Métodos every y som de las arrays
+// Métodos every y some de las arrays
 
 function Pares() {
     document.getElementById("titulo").innerHTML="Array con Pares / Impares";
