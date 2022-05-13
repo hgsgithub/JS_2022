@@ -8,10 +8,11 @@
 </head>
 <body>
     <script>
-var numero = [1, 5, 10, 15];
-/*var dobles = numero.map(function(x) {
+var numero = [1, 5, 10, 15]; // Funciones CallBack
+var dobles = numero.map(function(x) {
    return x * 2;
-});*/
+});
+/*console.log("Mi tabla doble es : " + dobles)
 // con funcion flecha
 var dobles =numero.map(x=>x*2)
 // numero vale [1, 5, 10, 15]
@@ -26,16 +27,18 @@ var raiz = numeror.map(function(num) {
 // raiz ahora es [1, 2, 3]
 console.log("Mi tabla inicial númeror es : "+ numeror)
 // numero es todavía [1, 4, 9]
-console.log("Mi tabla raiz es : "+ raiz)
+console.log("Mi tabla raiz es : "+ raiz)*/
+
 //Some devuelve true o false alguno cumple la condición
-let resultsome=numero.some(elem=>elem == 5); // ¿Hay algún 5?
+
+/*let resultsome=numero.some(elem=>elem === 5); // ¿Hay algún 5?
     console.log("Hay un 5 ? "+resultsome)
     
-let resultevery=numero.every(elem=>elem == 5); // ¿Todos son 5?
-    console.log("Todos son 5 ? "+resultevery)
+let resultevery=numero.every(elem=>elem === 5); // ¿Todos son 5?
+    console.log("Todos son 5 ? "+resultevery)*/
 // Utilizar dos argumentos con map
 let num5=numero.map((ele,index) => {
-        if(ele === 5 && index === 0)
+        if(ele === 5 && index === 1)
            return ele*2;
         else
            return ele;

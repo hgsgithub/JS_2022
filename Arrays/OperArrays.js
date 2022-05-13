@@ -9,7 +9,7 @@ let a3=[p1,p2,p3,p4];
 console.log(a3.indexOf(p3));
 // Funcion normal
 let nombres=a3.map(function(elem){
-return elem.id;
+return elem.id; // muestra la clave del objeto
 });
 console.log(a3);
 console.log(nombres);
