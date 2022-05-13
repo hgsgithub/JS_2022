@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Objetos</title>
+</head>
+<body>
+    <h1>Crear Objetos</h1>
+    <script>
+//creación de un objeto
+/*var vehiculo={     //Objeto vehiculo
+    marca:"seat",   // Propiedades
+    modelo:"leon",
+    stock:20,
+    tipo:{     //Objeto dentro del objeto vehiculo
+        combustible:"diesel",
+        eco:"hibrido"
+    }
+}
+console.log(vehiculo["marca"]); // Con []
+console.log(vehiculo.modelo); // con .
+console.log(vehiculo.tipo.combustible); // llamada jerarquica */
+// creación Array de objetos
+var arrayob=[
+{
+    marca:"seat",
+    modelo:"leon",
+    stock:20,
+    tipo:{
+        combustible:"diesel",
+        eco:"hibrido"
+    }
+},
+    {
+    marca:"toyota",
+    modelo:"corolla",
+    stock:20,
+    tipo:{
+        combustible:"gasolina",
+        eco:"hibrido"
+    }
+}
+]
+console.log(arrayob[0])
+console.log(arrayob[1])
+// recorrer array de objetos
+for (let i in arrayob){
+    console.log("Array ")
+    console.log(arrayob[i].modelo);
+}
+    </script>
+</body>
+</html>
