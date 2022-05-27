@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion objeto</title>
+</head>
+<body>
+    <h1>Creacion Objetos</h1>
+    <script>
+        /*const Musica ={
+            titulo: `Metallica`,
+            id: "1",
+            reproducir(){
+                return "reproduciendo musica... ${this.titulo}";
+            }*/
+
+    class Pelicula {
+        constructor(nombre,id){
+          this.nombre = nombre  ,
+          this.id = id;
+        }
+          reproducir(){
+                return `reproduciendo pelicula... ${this.nombre}`;
+          }
+        }
+    
+    const pelicula1 = new Pelicula("Batman",1);
+    const pelicula2 = new Pelicula("Spiderman",2);
+
+    class Serie extends Pelicula{
+        constructor (nombre,id,cap) {
+            super(nombre,id); // herencia Pelicula
+            this.cap=cap;
+        }
+        reproducirCapitulo(){
+            return `reproduciendo capitulo ${this.cap}... ${this.nombre}`
+        }
+    }
+    const serieUno = new Serie("Dexter", 1, 45)
+    console.log(pelicula1.nombre);
+    console.log(serieUno.reproducirCapitulo());
+
+        
+    </script>
+</body>
+</html>

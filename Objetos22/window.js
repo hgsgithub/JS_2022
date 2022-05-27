@@ -2,7 +2,7 @@
     function abrirVentana(URL)
     {
         miVentana = window.open(
-        URL,"VENTANA_02","width=400,height=200,location=1,titlebar=yes,resizable=yes"
+        URL,"VENTANA_02","width=400,height=200,location=1,menubar=1,status=1,titlebar=yes,resizable=yes"
     )
 } 
 

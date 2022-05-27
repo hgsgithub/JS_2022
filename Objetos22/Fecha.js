@@ -37,11 +37,10 @@
     var fechaDelDia = new Date();
     var segundo = fechaDelDia.getSeconds();
     document.write("<br/>Nº del segundo de la fecha de sistema : " + segundo);
-
-    // Método setDate -> define un nº de día del mes respecto a la fecha de sistema (el 15 del mes en nuestro caso)
+  
     var fechaDelDia = new Date();
     fechaDelDia.setDate(15);
-    document.write("<br/>El 15 del mes correspondiente a la fecha de sistema : " + fechaDelDia);
+    document.write("<br/>El 15 del mes Con SET correspondiente a la fecha de sistema : " + fechaDelDia);
 
     // Método setMonth -> define la fecha un mes atrás respecto a la fecha de sistema 
     var fechaDelDia = new Date();

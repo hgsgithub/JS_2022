@@ -47,5 +47,5 @@ console.log(alumnoUno)
 console.log(alumnoDos.edad)
 console.log(alumnoDos.Opositor())
 
-console.log(alumnoUno.toString()) // devuelve el tipo
+console.log(alumnoUno.edad.toString()) // devuelve el tipo
 console.log(alumnoUno.valueOf())  // devuelve el valor

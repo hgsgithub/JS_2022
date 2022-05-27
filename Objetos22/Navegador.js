@@ -12,3 +12,6 @@ function verificarNavegador() {
     document.getElementById("visualizacionInfoNavegador").innerHTML = caracteristicasNavigator;
 
 }
+document.getElementById("boton").onclick=function(){
+        verificarNavegador()
+    }

@@ -11,8 +11,9 @@ function visualizarHoraActual() {
 
     }
 
-
+// myInterval = setInterval(function, milliseconds);
+// Para cerrar clearInterval(myInterval); 
 var miHora = setInterval(function() {
     visualizarHoraActual()
-}, 1000);
+}, 2000);
 

@@ -1,4 +1,4 @@
-//function propiedadVentana(){
+function propiedadVentana(){
     //Propiedad host
     document.write("</br>Propiedad location.host : " + window.location.host);
    
@@ -14,10 +14,17 @@
     // Propiedad port 
     document.write("</br>Propiedad location.port : " + window.location.port);
     
-   //}
+   }
     //Función volverPaginaAnterior 
     function volverPaginaAnterior() {
         //Retorno a la página anterior 
         window.history.back()
     }
+
+    /*document.getElementById("boton").onclick=function(){
+        propiedadVentana()
+    }
+    document.getElementById("boton1").onclick=function(){
+        volverPaginaAnterior()
+    }*/
    
