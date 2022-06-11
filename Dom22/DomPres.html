@@ -44,9 +44,11 @@ var nuevaDiv = document.createElement("div");
 // Creación del nodo de tipo texto
 var textoDiv = document.createTextNode("Buenos días, mundo");
 var texto1Div = document.createTextNode("Texto linea 2 ") // creamos otra línea texto para el div nuevo
+var texto2Div = document.createTextNode("Texto linea 3")
 // Asignación del nodo textoDiv al nodo nuevaDiv
 nuevaDiv.appendChild(textoDiv);
 nuevaDiv.appendChild(texto1Div); // añadimos el texto a div
+nuevaDiv.appendChild(texto2Div);
 // Integración del nuevo div
 antiguoContainer.appendChild(nuevaDiv); // añadimos el nuevo div al antiguo
 console.log(antiguoContainer) // visualizamos el div creado.

@@ -17,7 +17,7 @@
             cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
         
         <button id="boton" class="btn btn-info">Cambiar</button>
-        <!--button id="boton" class="btn btn-info" onclick="alert('click')">-->
+        <!--button id="boton" class="btn btn-info" onclick="alert('click')"> en html-->
 
     </div>
     <script>
@@ -27,11 +27,17 @@
         console.log(h1.innerHTML); //2 podemos acceder únicamente al texto de h1.
         h1.innerHTML = "Este es el nuevo texto" // Podemos modificar el texto.
         h1.style.color="blue"
-        h1.style.background="red"
-
-        // accedemos al párrafo
-        var parrafo = document.getElementById("parrafo");
-        parrafo.style.color="blue"
+        h1.style.background="green"
+        console.log(h1.innerHTML)
+       //si queremos alinear al centro (añadir)
+        h1.align="center"
+        // accedemos al párrafo, únicamente al primer párrafo no es una array
+        var par = document.getElementById("parrafo"); //Id única no colectiva
+            par.style.color="blue"
+            console.log(par)
+        /*var pars = document.getElementsByClassName("P1") // Colección
+        pars[1].align="center"
+        pars[1].style.color="red"*/
 
         //accedemos al botón
         var boton = document.getElementById("boton");
@@ -41,17 +47,21 @@
         } */
 
         function cambiar() {
-            parrafo.style.color="green"
+            par.style.color="green"
         }
         boton.onclick = cambiar; // tambien se puede hacer así
 
         // vamos acceder desde class
-       // var parrafo1 = document.getElementsByClassName("P1");
-       // console.log(parrafo1[0]); // devuelve un array si es colectivo el párrafo
-
+       var parrafo1 = document.getElementsByClassName("P1");
+       console.log(parrafo1[0].innerHTML); // devuelve un array si es colectivo el párrafo
+       parrafo1[1].style.color="green"
         // querySelector podemos buscar cualquier selector
-       var parrafo1 = document.querySelector("p")
-        console.log(parrafo1)
+      
+        //var parrafoq = document.querySelector("p")// Devuelve 1 elemento coincidente
+        //console.log(parrafoq)
+        var parrafoq = document.querySelectorAll("p") // Devuelve todos
+        console.log(parrafoq)
+        parrafoq[1].align="center"
 
         // trabajar con eventos.
         var boton1 = document.getElementById("boton");

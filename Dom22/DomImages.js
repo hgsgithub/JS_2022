@@ -14,7 +14,7 @@ document.write("Atributo src de la tercera imagen : " + document.images[2].src +
 document.write("Atributo width de la cuarta imagen : " + document.images[3].width + "<br />");
 document.write("Atributo height de la cuarta imagen : " + document.images[3].height + "<br />");
 
-/* Ejemplos añadidos con getElement
+//Ejemplos añadidos con getElement
 var longImg = document.getElementById("parrafo") // devuelve el parrafo
        longImg.innerHTML="Puedes modificar la imagen "+ document.images[2].id //Modifica imagen 3
 
@@ -25,4 +25,4 @@ boton.onclick = function (){    // es una funcion anónima se puede hacer así
 boton1.onclick = function (){    // es una funcion anónima se puede hacer así
     var imagen1 = document.getElementById("PBASUS");
     imagen1.height="150";
-                } */
+                } 
