@@ -1,25 +1,32 @@
-let link = document.getElementById("toGoogle");
-let link1=document.getElementById("toGoogle1")
+// <p><a id="toGoogle" href="https://google.es" class="enlace">Google</a></p>
+// Cambiar de la línea anterior, la clase poner "enlaceuni10", href = "https://twitter.com"
+// Cambiar el texto="Twitter" y si no hay titulo crearlo = "Ahora voy a Twitter"
+let link =document.getElementById("toGoogle");
 
-link.className = "enlaceuni10"; // Equivale a: link.setAttribute("class", "enlace");
+link.className="enlaceuni10";
 link.setAttribute("href", "https://twitter.com");
-link.textContent = "Twitter";
-if(!link.hasAttribute("title")) { // Si no tenía el atributo title, establecemos uno 
-link.title = "Ahora voy a Twitter!";
-}
-// Imprime: <a id="toGoogle" href="https://twitter.com" class="enlace“ title="Ahora voy a Twitter!">Twitter</a> 
-let ValorAt=link.getAttribute("title")
-console.log(ValorAt);
-console.log(link);
-console.log(link1);
+link.textContent="Twitter"
 
-let div = document.getElementById("normalDiv");
-console.log(div);
-div.style.boxSizing = "border-box";
-div.style.maxWidth = "200px";
-div.style.padding = "50px";
-div.style.color = "white";
-div.style.backgroundColor = "cyan";
+if(!link.hasAttribute("title")){
+    link.title="Ahora vamos a Twitter"
+}
+
+// Crear un estilo para normalDiv
+// border, ancho="200px", padding="50px", color="white", backgroundColor="cyan"
+let div = document.getElementById("normalDiv")
+div.style.boxSizing="border-box"
+div.style.maxWidth="200px"
+div.style.padding ="50px"
+div.style.color="white"
+div.style.background="cyan"
+
+let link1 =document.getElementById("toGoogle1")
+let ValorAt=link.getAttribute("title")
+console.log(ValorAt)
+console.log(link)
+console.log(link1)
+
+
 
 
 
