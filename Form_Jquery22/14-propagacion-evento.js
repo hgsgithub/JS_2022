@@ -12,7 +12,7 @@ div1.addEventListener('click', event => {
 }, true);
 div2.addEventListener('click', event => {
     console.log("Click en div2, Fase: " + event.eventPhase);
-    //event.stopPropagation();
+    event.stopPropagation();
 }, true);
 div3.addEventListener('click', event => {
     console.log("Click en div3, Fase: " + event.eventPhase);

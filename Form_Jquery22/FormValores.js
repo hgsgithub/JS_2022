@@ -9,8 +9,9 @@ function envioForm(e) {
     e.preventDefault();
     const aficiones = Array.from(form.aficiones)
         .filter (function (a){  //sin arrow
-            return a.checked
             console.log(a.checked)
+            return a.checked
+           
         })
         /*.filter(input => input.checked) // con arrow
             input.checked
