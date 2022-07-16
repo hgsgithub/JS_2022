@@ -10,11 +10,11 @@ $(document).ready(function () {
     //document.querySelector('.text-center').innerHTML = 'Texto con clase JS';
 
     // cambia el texto en todos los h1 de la clase
-    // $(".division h1").html("cambio de texto");
+    //$(".division h1").html("cambio de texto");
     // cambia el texto en el primer h1 de la clase
-     // $(".division h1:first").html("cambio de texto");
+    // $(".division h1:first").html("cambio de texto");
     // cambia el texto en ultimo h1 de la clase
-    // $(".division h1:last").html("cambio de texto");
+    //$(".division h1:last").html("cambio de texto");
 
 //Agrengando Clase addClass
 //$('#idagrega').addClass('text-danger');  
@@ -42,9 +42,9 @@ $(document).ready(function () {
 
 // funcion attr
 
-//$('img').attr('src','PBHP.png'); // mete la imagen en todos los img
-//$('img:first').attr("width","80")
-//$('img:last').attr("width","100")
+$('img').attr('src','PBHP.png'); // mete la imagen en todos los img
+$('img:first').attr("width","80")
+$('img:last').attr("width","100")
 
 
 //Evento click Agregando clase
