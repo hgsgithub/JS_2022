@@ -4,7 +4,7 @@ $(document).ready(function(){
         $("tr:first").css("background", "#9cf");
     }); 
     $('#boton6').click(function(){
-        //$('tr:first').hide()
+        $('tr:first').hide()
         $("tr:first").css("background", "#fff");
     });
 
