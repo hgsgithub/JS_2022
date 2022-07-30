@@ -19,7 +19,8 @@ $(document).ready(function(){
     });  
     $("#boton3").on("click", function() {  //events [,selector][,data]
         $.get("lorem.html", function(contenido) {  // url[,data][,success][,dataType]
-            $("#caja1").append(contenido);  
+            //$("#caja1").append(contenido); 
+            $("#caja1").html (contenido) 
         });  
     });  
 });  
